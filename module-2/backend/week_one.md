@@ -75,6 +75,13 @@ Note: When you're done, submit a PR.
 
 17. Let's say we have an application with restaurants. There are seven verb + path combinations necessary to provide full CRUD functionality for our restaurant application. List each of the seven combinations, and explain what each is for.
 
+- get '/restaurants/ Displays index of restauraunts
+- get '/restauraunts/new'Displays form
+- post '/restauraunts'Creates new restauraunt in the database
+- get '/restauraunts/:id/edit'Displays a form
+- put '/restauraunts/:id'Updates database
+- get '/restauraunts/:id' Displays a single instance of restauraunt
+- delete '/restauraunts/:id' Deletes from database
 
 18. What's a migration? 
 
