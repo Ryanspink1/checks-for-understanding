@@ -6,7 +6,7 @@ Note: When you're done, submit a PR.
 
 1. At a high level, what is ActiveRecord? What does it do/allow you to do?
 
-AR is an ORM. It allows the use of object oriented programming with databases. 
+  AR is an ORM. It allows the use of object oriented programming with databases. 
 
 2. Assume you have the following model:
 
@@ -17,11 +17,11 @@ end
 
 What are some methods you can call on `Team`? If these methods aren't defined in the class, how do you have access to them?
 
-all, first, last while, find, sum, average. The methods are inhereted from AR. 
+  all, first, last while, find, sum, average. The methods are inhereted from AR. 
 
 3. Assume that in your database, a team has the following attributes: "id", "name", owner_id". How would you find the name of a team with an id of 4? Assuming your class only included the code from question 2, how could you find the owner of the same team?
 
-Team.find(4).name, Owner.find(Team.find(4).owner_id)
+  Team.find(4).name, Owner.find(Team.find(4).owner_id)
 
 4. Assume that you added a line to your `Team` class as follows:
 
@@ -31,40 +31,40 @@ class Team << ActiveRecord::Base
 end
 ```
 
-Now how would you find the owner of the team with an id of 4?
-Team.find(4).owners
+ - Now how would you find the owner of the team with an id of 4?
+  Team.find(4).owners
 
 3. What do they allow you to do?
 
-It allows me to access the owner table through a foreign key.
+  It allows me to access the owner table through a foreign key.
 
 7. In a database that's holding students and teachers, what will be the relationship between students and teachers? Draw the schema diagram.
 
-Many-to-Many relationship
+  Many-to-Many relationship
 
-T: Teachers: id, name
-T: Students: id, name
-T: Teacher_Student: teacher_id, student_id
+  T: Teachers: id, name
+  T: Students: id, name
+  T: Teacher_Student: teacher_id, student_id
 
 
 8. Define foreign key, primary key, and schema.
 
--Primary key: the unique number/identifier assigned to each object in the database in order of creation(by default)
--Foreign key: In a database relationship between two tables, the foreign key is an attribute of one object where the primary key of it's related object in another table is placed. 
-- Schema: is the backbone of the database, defines the structure of the database as it currently exists. 
+  -Primary key: the unique number/identifier assigned to each object in the database in order of creation(by default)
+  -Foreign key: In a database relationship between two tables, the foreign key is an attribute of one object where the primary key of it's  related object in another table is placed. 
+  -Schema: is the backbone of the database, defines the structure of the database as it currently exists. 
   
   
 9. Describe the relationship between a foreign key on one table and a primary key on another table.
 
-See question 8, 2nd answer.
+  See question 8, 2nd answer.
 
 10. What are the parts of an HTTP response?
 
-Status code, header, body
+  Status code, header, body
 
 11. Describe some techniques to make our Sinatra code more DRY. Give an example of when you would use these techniques.
 
-Oof, not sure what is meant by "DRY". I will look it up and make sure I'm on it though. 
+  Oof, not sure what is meant by "DRY". I will look it up and make sure I'm on it though. 
 
 
 ### Optional Questions
